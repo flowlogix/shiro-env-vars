@@ -17,8 +17,10 @@
 
     <properties>
         <slf4j.version>2.0.13</slf4j.version>
+        <arquillian.payara.version>3.0</arquillian.payara.version>
         <checkstyle.supressionsLocation>${basedir}/checkstyle/suppressions.xml</checkstyle.supressionsLocation>
         <test.redirect.to.file>false</test.redirect.to.file>
+        <jdk11FailsafeOptions>--add-opens=java.base/java.util=ALL-UNNAMED</jdk11FailsafeOptions>
     </properties>
 
     <dependencies>
@@ -42,7 +44,13 @@
         <dependency>
             <groupId>fish.payara.arquillian</groupId>
             <artifactId>arquillian-payara-server-remote</artifactId>
-            <version>3.0</version>
+            <version>${arquillian.payara.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>fish.payara.arquillian</groupId>
+            <artifactId>environment-setup</artifactId>
+            <version>${arquillian.payara.version}</version>
             <scope>test</scope>
         </dependency>
 
