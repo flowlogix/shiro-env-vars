@@ -29,7 +29,6 @@ public class EnvVarIT {
 
     @Deployment
     static WebArchive deploy() {
-        return ShrinkWrapManipulator.createDeployment(WebArchive.class)
-                .addClass(PayaraServerLifecycleExtension.class);
+        return ShrinkWrapManipulator.createDeployment(WebArchive.class);
     }
 }
