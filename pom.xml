@@ -17,7 +17,7 @@
 
     <properties>
         <arquillian.payara.version>3.1</arquillian.payara.version>
-        <depchain.version>18</depchain.version>
+        <depchain.version>19</depchain.version>
         <checkstyle.supressionsLocation>${basedir}/src/checkstyle/suppressions.xml</checkstyle.supressionsLocation>
         <test.redirect.to.file>false</test.redirect.to.file>
         <jdk11FailsafeOptions>--add-opens=java.base/java.util=ALL-UNNAMED</jdk11FailsafeOptions>
@@ -41,7 +41,6 @@
             <groupId>com.flowlogix.depchain</groupId>
             <artifactId>shiro-jakarta</artifactId>
             <version>${depchain.version}</version>
-            <type>pom</type>
         </dependency>
         <dependency>
             <groupId>com.flowlogix.depchain</groupId>
