@@ -20,6 +20,7 @@
         <arquillian.payara.version>3.1</arquillian.payara.version>
         <checkstyle.suppressionsLocation>${maven.multiModuleProjectDirectory}/src/checkstyle/suppressions.xml</checkstyle.suppressionsLocation>
         <test.redirect.to.file>false</test.redirect.to.file>
+        <test.run.order>reversealphabetical</test.run.order>
         <jdk11FailsafeOptions>--add-opens=java.base/java.util=ALL-UNNAMED</jdk11FailsafeOptions>
     </properties>
 
