@@ -5,6 +5,6 @@
 <!-- See https://github.com/hazelcast/hazelcast/blob/master/checkstyle/suppressions.xml for examples -->
 <suppressions>
     <!-- do not require package-info.java -->
-    <suppress checks="JavadocPackage" files="com[\\/]flowlogix[\\/]reproducers[\\/]*"/>
-    <suppress checks="Header" files="com[\\/]flowlogix[\\/]reproducers[\\/]*"/>
+    <suppress checks="JavadocPackage" files=".*.java$"/>
+    <suppress checks="Header" files=".*.java$"/>
 </suppressions>

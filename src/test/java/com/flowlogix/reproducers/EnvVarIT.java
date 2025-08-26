@@ -13,7 +13,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @ExtendWith(PayaraServerLifecycleExtension.class)
 @ExtendWith(ArquillianExtension.class)
-public class EnvVarIT {
+class EnvVarIT {
     @Inject
     EnvironmentBean environmentBean;
 
