@@ -16,7 +16,7 @@
 
     <properties>
         <flowlogix.depchain.version>114</flowlogix.depchain.version>
-        <flowlogix.version>11.1.1</flowlogix.version>
+        <flowlogix.version>11.2</flowlogix.version>
         <checkstyle.suppressionsLocation>${maven.multiModuleProjectDirectory}/src/checkstyle/suppressions.xml</checkstyle.suppressionsLocation>
         <test.redirect.to.file>false</test.redirect.to.file>
         <test.run.order>reversealphabetical</test.run.order>
