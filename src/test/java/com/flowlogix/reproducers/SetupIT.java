@@ -1,15 +1,13 @@
 package com.flowlogix.reproducers;
 
-import com.flowlogix.testcontainers.PayaraServerLifecycleExtension;
+import com.flowlogix.test.AppServerLifecycle;
+import com.flowlogix.testcontainers.AppServerLifecycleExtension;
 import org.jboss.arquillian.container.test.api.Deployment;
-import org.jboss.arquillian.junit5.ArquillianExtension;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
 import org.jboss.shrinkwrap.api.spec.JavaArchive;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 
-@ExtendWith(PayaraServerLifecycleExtension.class)
-@ExtendWith(ArquillianExtension.class)
+@AppServerLifecycle
 @SuppressWarnings("HideUtilityClassConstructor")
 class SetupIT {
     @Test
@@ -19,6 +17,6 @@ class SetupIT {
 
     @Deployment
     static JavaArchive deploy() {
-        return ShrinkWrap.create(JavaArchive.class).addClass(PayaraServerLifecycleExtension.class);
+        return ShrinkWrap.create(JavaArchive.class).addClasses(AppServerLifecycleExtension.class, AppServerLifecycle.class);
     }
 }
