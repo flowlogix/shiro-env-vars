@@ -11,12 +11,12 @@
     <parent>
         <groupId>com.flowlogix</groupId>
         <artifactId>payara-pom</artifactId>
-        <version>145</version>
+        <version>146</version>
     </parent>
 
     <properties>
-        <flowlogix.depchain.version>132</flowlogix.depchain.version>
         <flowlogix.version>11.7.1</flowlogix.version>
+        <flowlogix.depchain.version>133</flowlogix.depchain.version>
         <checkstyle.suppressionsLocation>${maven.multiModuleProjectDirectory}/src/checkstyle/suppressions.xml</checkstyle.suppressionsLocation>
         <test.redirect.to.file>false</test.redirect.to.file>
         <test.run.order>reversealphabetical</test.run.order>
