@@ -16,6 +16,7 @@
 
     <properties>
         <flowlogix.version>11.7.6</flowlogix.version>
+        <flowlogix.bom.version>56</flowlogix.bom.version>
         <flowlogix.depchain.version>135</flowlogix.depchain.version>
         <checkstyle.suppressionsLocation>${maven.multiModuleProjectDirectory}/src/checkstyle/suppressions.xml</checkstyle.suppressionsLocation>
         <test.redirect.to.file>false</test.redirect.to.file>
@@ -72,4 +73,16 @@
             <scope>runtime</scope>
         </dependency>
     </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.flowlogix</groupId>
+                <artifactId>flowlogix-bom</artifactId>
+                <version>${flowlogix.bom.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>
